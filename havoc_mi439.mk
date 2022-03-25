@@ -15,6 +15,12 @@ $(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 # Inherit from mi439 device
 $(call inherit-product, device/xiaomi/mi439/device.mk)
 
+# Build
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_BLUR := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
 # Overlays
 PRODUCT_PACKAGES += \
     xiaomi_pine_overlay_lineage \
